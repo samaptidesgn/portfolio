@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Portfolio | Samapti Bhandari</title>
+        <link rel="stylesheet" href="index.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    </head>
+    <body>
+        <div class="hero-header">
+            <div class="wrapper">
+                <header>
+                    <div class="logo">
+                        <i class="fa-sharp fa-solid fa-s"></i>
+                        <div class="logo-text">Samapti Bhandari</div>
+                    </div>
+                    <nav>
+                        <div class="togglebtn">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                        <ul class="navlinks">
+                            <li><a href="#about">Home</a></li>
+                            <li><a href="#about">About</a></li>
+                            <li><a href="https://web-app-nuae.onrender.com">Projects</a></li>
+                            <li><a href="mailto:samaptibhandari5@gmail.com">Contact</a></li>
+                        </ul>
+                    </nav>
+                </header>
+                <div class="container">
+                    <div class="hero-pic">
+                        <img src="images/main_photo.jpg" alt="profile pic">
+                    </div>
+                    <div class="hero-text" id="about">
+                        <h5>Hi I'm a <span class="input">Web Developer</span></h5>
+                        <h1>Samapti Bhandari</h1>
+                        <p>I'm a web developer with a passion for creating beautiful and functional websites. I have experience in HTML, CSS, JavaScript, and Python, MySQL and
+                            more. Currently sharpening my skills through real-world projects and internship
+                        </p>
+                        <br><br>
+                        <h1>Skills</h1>
+                        <lable style="color: #fff;">Programming Language:</lable>
+                        <p>HTML, CSS, JavaScript, Python, MySQL, C Language, C++</p><br>
+
+                        <label style="color: #fff;">Frameworks:</label>
+                        <p>Bootstrap, Django, Flask</p><br>
+
+                        <label style="color: #fff;">Tools:</label>
+                        <p>Git, GitHub, Visual Studio Code, Figma</p><br>
+
+                        <label style="color: #fff;">Soft Skills:</label>
+                        <p>Teamwork, Communication, Problem Solving, Adaptability</p><br>
+
+                        <h1>Experience</h1>
+                        <p>Worked on a web development project using HTML, CSS, and JavaScript, Python to create a responsive Daily Routine Tracker app as part of final project submission for CS50 — Harvard University's introductory computer science course.</p><br>
+                        <a href="https://web-app-nuae.onrender.com" style="text-decoration: none; color: #fff; font-size: 20px; margin-top: 10px; display: inline-block;">View Project</a>
+
+                        <div class="btn-group">
+                            <a href="resume/my_resume.pdf" class="btn active">Download CV</a>
+                            <a href="mailto:samaptibhandari5@gmail.com" class="btn">Contact Me</a>
+                        </div>
+
+                        <div class="social">
+                            <h2 style="color: #077ced; margin-bottom: 5px;">Socials</h2>
+                            <a href="https://www.linkedin.com/in/samapti-bhandari?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BwatTMcxTR3yO4mS26cnUQQ%3D%3D"><i class="fa-brands fa-linkedin"></i></a>
+                            <a href="https://www.instagram.com/samapti_fit?igsh=c3EzZTB4OHVkcjE4"><i class="fa-brands fa-instagram"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.10/typed.min.js"></script>
+        
+        <script>
+            var togglebtn=document.querySelector(".togglebtn");
+            var nav=document.querySelector(".navlinks");
+            var links=document.querySelector(".navlinks li");
+
+            togglebtn.addEventListener("click",function(){
+                this.classList.toggle("click");
+                nav.classList.toggle("open");
+            })
+
+            var typed=new Typed(".input",{
+                strings:["Web Developer","Python Programmer","Frontend Developer"],
+                typeSpeed:70,
+                backSpeed:50,
+                loop:true
+            })
+        </script>
+    </body>
+</html>
